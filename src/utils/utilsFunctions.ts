@@ -1,4 +1,4 @@
-import { IdType, LocationType, UserDataType } from "./types";
+import { IdType, LocationType } from "./types";
 
 export const getFullLocation = (location: LocationType): string =>
   `${location.street.number} ${location.street.name}, ${location.city}, ${location.country}`;
@@ -13,10 +13,7 @@ export const getId = (id: IdType): string => {
   }
 };
 
-export const getUsersDataToSave = (
-  data: any
-  // data: Required<UserDataType[]>
-) =>
+export const getUsersDataToSave = (data: any) =>
   data.map(({ name, email, picture, location, id }: any) => ({
     name,
     email,

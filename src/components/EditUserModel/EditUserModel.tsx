@@ -5,7 +5,6 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 import { UserDataType } from "../../utils/types";
 import { ModalActions, formStyle, modalStyle } from "./styles";
-import useWindowSize from "../../customHooks/useWindowSize";
 import { useDispatch } from "react-redux";
 import { editUser } from "../../users/usersSlice";
 import { AppDispatch } from "../../store/store";
